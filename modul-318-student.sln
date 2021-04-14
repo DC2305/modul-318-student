@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissTransport", "src\SwissTransport\SwissTransport.csproj", "{D0262178-A48F-4DE0-807B-E76B63E39421}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissTransportTest", "tests\SwissTransportTest\SwissTransportTest.csproj", "{959C6E54-5B1C-40F5-938A-C57B17451421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeineTransportApp", "MeineTransportApp\MeineTransportApp.csproj", "{AFD10C53-2077-493A-BF63-145253BA4F0F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0262178-A48F-4DE0-807B-E76B63E39421} = {D0262178-A48F-4DE0-807B-E76B63E39421}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +26,15 @@ Global
 		{959C6E54-5B1C-40F5-938A-C57B17451421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{959C6E54-5B1C-40F5-938A-C57B17451421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{959C6E54-5B1C-40F5-938A-C57B17451421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD10C53-2077-493A-BF63-145253BA4F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD10C53-2077-493A-BF63-145253BA4F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD10C53-2077-493A-BF63-145253BA4F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD10C53-2077-493A-BF63-145253BA4F0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3ADE546-4B58-4728-9C63-CBDAF0C3CAC8}
 	EndGlobalSection
 EndGlobal
